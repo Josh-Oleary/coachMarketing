@@ -1,0 +1,212 @@
+* {
+	padding: 0;
+	margin: 0;
+}
+
+header {
+	display: flex;
+	justify-content: space-between;
+    padding: 1rem;
+    background-color: rgb(46, 46, 46);
+}
+
+header a {
+    text-decoration: none;
+    font-family: 'Playfair Display', serif;
+    padding: 5px;
+    color: white;
+    opacity: 75%;
+}
+header a:hover {
+    opacity: 1;
+}
+.hero {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    
+}
+.hero-statement {
+    text-transform: capitalize;
+    opacity: 0;
+    animation: 1s fadein .5s linear forwards;
+    color: rgb(0, 0, 0);
+    text-align: center;
+}
+@keyframes fadein {
+    0% {
+        transform: translateY(15px);
+    }
+    100%{
+        opacity: 1;
+        top: 0;
+    }
+}
+
+.hero .background-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    z-index: -1;
+}
+
+section:nth-of-type(odd) {
+    background-color:rgba(150, 150, 150, 0.288)
+}
+section h2 {
+    text-align: center;
+    padding: 1rem;
+    text-transform: capitalize;
+    font-family: 'Playfair Display', serif;
+}
+hr {
+    width: 8rem;
+    margin: auto;
+    height: 2px;
+    background-color: black;
+}
+ul li {
+    list-style-type: none;
+}
+.about-me {
+    margin: auto;
+}
+.about-me-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-top: 2rem;
+}
+
+.about-card {
+    box-shadow: 0 0px 5px rgb(150, 150, 150);
+    margin: 2rem 1rem;
+    flex-basis: 40%;
+    text-align: center;
+    transition: 200ms;
+    background-color: white;
+    border-radius: 5%;
+}
+.about-card:hover {
+    box-shadow: 0px 0px 8px rgb(150, 150, 150);
+}
+.about-card img {
+    width: 20rem;
+    height: 20rem;
+    margin-top: 1rem;
+}
+.about-card .container {
+    padding: 2px 16px;
+}
+.about-card h3 {
+    font-family: 'Playfair Display', serif;
+}
+.about-card li {
+    font-family: 'Barlow', sans-serif;
+}
+.testimonial-quotes {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+.testimonial-quotes div {
+    margin: 2rem;
+}
+.testimonials .quote {
+    text-align: center;
+    width: 30rem;
+    line-height: 1.5;
+    font-family: 'Barlow', sans-serif;
+}
+.testimonials .author {
+    text-align: center;
+    margin-top: 1rem;
+    font-family: 'Playfair Display', serif;
+}
+.contact-form {
+    margin: auto;
+}
+.contact-form form{
+    height: 14rem;
+    margin: auto;
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+    padding: 1rem 1rem;
+    box-shadow: 0 0 5px;
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 10px;
+}
+.contact-form div, button {
+    margin-top: 1rem;
+}
+.contact-form button {
+    padding: 2px 2px;
+    border-radius: 2px;
+    border: 1px solid black;
+    background-color: white;
+    box-shadow: 0 0 2px;
+    transition: 250ms;
+}
+.contact-form button:hover {
+    box-shadow: 0 1px 4px;
+}
+.contact-form button:active {
+    box-shadow: 0 0 0;
+}
+footer {
+    background-color: rgb(46, 46, 46);
+    display: flex;
+    justify-content: space-between;
+    height: 2.5rem;
+    align-items: center;
+}
+footer a {
+    text-decoration: none;
+    font-family: 'Playfair Display', serif;
+    padding: 5px;
+    color: white;
+    opacity: 75%;
+    font-weight: 100;
+}
+footer a:hover {
+    opacity: 1;
+}
+
+@media (max-width: 375px) {
+    .navHidden {
+        display: none;
+    }
+    .hero h3 {
+        font-size: medium;
+    }
+    .testimonial-quotes p {
+        font-size: small;
+    }
+    .testimonial-quotes .quote {
+        width: 15rem;
+    }
+    .about-card img {
+        height: 15rem;
+        width: 18rem;
+    }
+    .about-card li {
+        font-size: small;
+    }
+    .contact-form textarea {
+        width: 8rem;
+    }
+    .contact-form button {
+        margin-top: 3px;
+    }
+}
