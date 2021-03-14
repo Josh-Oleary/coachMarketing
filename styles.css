@@ -157,6 +157,7 @@ ul li {
     background-color: white;
     box-shadow: 0 0 2px;
     transition: 250ms;
+    margin-bottom: 1rem;
 }
 .contact-form button:hover {
     box-shadow: 0 1px 4px;
