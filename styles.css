@@ -210,4 +210,8 @@ footer a:hover {
     .contact-form button {
         margin-top: 3px;
     }
+    .contact-form label, input {
+        margin-left: 1.1rem;
+        width: 8rem;
+    }
 }
