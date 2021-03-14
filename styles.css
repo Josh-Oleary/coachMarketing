@@ -188,6 +188,9 @@ footer a:hover {
     .navHidden {
         display: none;
     }
+    .hero h2, h3 {
+        transform: translateY(-6rem);
+    }
     .hero h3 {
         font-size: medium;
 	padding-left: .5rem;
